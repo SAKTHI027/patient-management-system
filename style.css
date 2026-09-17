@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f7fa;
+  color: #333;
+}
+
+/* Login Page */
+.login-container {
+  position: fixed;
+  top: 0; right: 0;
+  width: 100%; height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  transition: transform 0.8s ease-in-out;
+  z-index: 10;
+}
+.login-container.hidden {
+  transform: translateX(-100%);
+}
+.login-box {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  width: 320px;
+  text-align: center;
+}
+.login-box h2 {
+  margin-bottom: 1rem;
+  color: #4facfe;
+}
+.login-box input {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s;
+}
+.login-box input:focus {
+  border-color: #4facfe;
+  outline: none;
+}
+.login-box button {
+  width: 100%;
+  padding: 0.8rem;
+  background: #4facfe;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+.login-box button:hover {
+  background: #00c6fb;
+  transform: scale(1.05);
+}
+
+/* Dashboard */
+.dashboard {
+  display: none;
+  padding: 2rem;
+}
+.nav {
+  background: #4facfe;
+  padding: 1rem;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+  text-align: center;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.card h3 {
+  color: #4facfe;
+  margin-bottom: 0.5rem;
+}
+.card i {
+  font-size: 2rem;
+  color: #4facfe;
+  margin-bottom: 0.5rem;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+th, td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+th {
+  background: #4facfe;
+  color: #fff;
+}
+tr:hover {
+  background: #f9f9f9;
+}
